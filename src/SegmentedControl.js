@@ -48,7 +48,7 @@ class SegmentedControl extends Component {
             key={option.value}
             onClick={() => this.setValue(option.value)}
             htmlFor={getId(option)}
-            data-value={option.label}
+            data-value={option.labelValue || option.label}
           >
             {option.label}
           </label>
